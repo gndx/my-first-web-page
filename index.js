@@ -2,7 +2,9 @@ const API = 'http://api.tvmaze.com/shows';
 const element = document.getElementById('tvshows');
 
 function getData(urlApi) {
-  fetch(urlApi)
+  fetch(urlApi, {
+    mode: 'no-cors'
+  })
     .then((response) => response.json())
     .then(function (data) {
       let output = data.slice(0, 16).map(function (show) {
