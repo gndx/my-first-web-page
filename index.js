@@ -1,4 +1,4 @@
-const API = 'http://api.tvmaze.com/shows';
+const API = 'https://api.tvmaze.com/shows';
 const element = document.getElementById('tvshows');
 
 function getData(urlApi) {
